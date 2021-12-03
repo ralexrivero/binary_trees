@@ -6,6 +6,7 @@
  *
  * Return: Number odes
  */
+
 int count_nodes(binary_tree_t *root)
 {
 	if (!root)
@@ -23,6 +24,7 @@ int count_nodes(binary_tree_t *root)
  *
  * Return: 1 if the tree is a heap, 0 otherwise
  */
+
 int is_complete(binary_tree_t *root, int index, int n)
 {
 	if (!root)
@@ -42,8 +44,8 @@ int is_complete(binary_tree_t *root, int index, int n)
 }
 
 /**
- * binary_tree_is_co
- * @tree: Pointer to trees' root
+ * binary_tree_is_complete - check for bt complete
+ * @tree: Pointer to root
  *
  * Return: 1 if
  */

@@ -17,7 +17,8 @@ bst_t *min_finder(bst_t *root)
  *
  * @root: pointer to the root node of the tree where you will remove a node
  * @value: value to remove in the tree
- * Return: pointer to the new root node of the tree after removing the desired value
+ * Return: pointer to the new root node of the tree
+ * after removing the desired value
  */
 
 bst_t *bst_remove(bst_t *root, int value)

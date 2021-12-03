@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <limits.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -21,9 +22,17 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
+/* Binary Search Tree */
 typedef struct binary_tree_s bst_t;
+
+/* AVL Tree */
 typedef struct binary_tree_s avl_t;
+
+/* Max Binary Heap */
 typedef struct binary_tree_s heap_t;
+
+/* print */
+void binary_tree_print(const binary_tree_t *);
 
 /***************/
 /* Prototypes */
@@ -67,18 +76,5 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
-
-/* Binary Search Tree */
-typedef struct binary_tree_s bst_t;
-
-/* AVL Tree */
-typedef struct binary_tree_s avl_t;
-
-/* Max Binary Heap */
-typedef struct binary_tree_s heap_t;
-
-/* print */
-void binary_tree_print(const binary_tree_t *);
-
 
 #endif

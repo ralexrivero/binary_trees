@@ -11,5 +11,5 @@
  */
 avl_t *avl_remove(avl_t *root, int value)
 {
-	return 0;
+	return (root);
 }
